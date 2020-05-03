@@ -49,6 +49,7 @@ class CreateTransactionService {
       value,
       type,
       category_id: categoryResponse?.id,
+      category: categoryResponse,
     });
 
     if (!transaction) {
